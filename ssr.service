@@ -1,0 +1,13 @@
+[Unit]
+Description=Shadowsocks R8 Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/shadowsocks/shadowsocks/logrun.sh
+ExecStop=/root/shadowsocks/shadowsocks/stop.sh
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
