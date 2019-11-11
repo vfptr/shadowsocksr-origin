@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/root/shadowsocks/shadowsocks/logrun.sh
-ExecStop=/root/shadowsocks/shadowsocks/stop.sh
+ExecStart=/root/shadowsocksr/shadowsocks/logrun.sh
+ExecStop=/root/shadowsocksr/shadowsocks/stop.sh
 KillMode=process
 Restart=on-failure
 
